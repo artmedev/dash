@@ -1,0 +1,11 @@
+{
+  "name": "dash",
+  "private": true,
+  "workspaces": ["server", "client", "agent"],
+  "scripts": {
+    "db": "docker compose up -d db",
+    "dev:server": "npm run dev -w server",
+    "dev:client": "npm run dev -w client",
+    "agent": "npm start -w agent"
+  }
+}
